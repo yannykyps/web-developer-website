@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" description="Error 404 Page Yanny Kyps"/>
+    <SEO title="404: Not found" description="Error 404 Page"/>
     <main className="error-page">
   <div className="error-container">
     <h1>oops! something's not right.</h1>

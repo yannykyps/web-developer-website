@@ -13,7 +13,7 @@ export default ({data}) => {
   const {allStrapiProjects:{nodes:projects}} = data
   return (
   <Layout>
-    <SEO title="Home" description="Yanny Kyps Freelance Web Developer Home Page"/>
+    <SEO title="Yanny" description="Freelance Web Developer services based in Milton Keynes, UK. Specialising in creating blazing fast web content using React and Gatsby."/>
     <Hero />
     <Services />
     <Skills />

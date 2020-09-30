@@ -1,0 +1,44 @@
+import React from 'react'
+import Title from '../components/Title'
+import SocialLinks from '../constants/socialLinks'
+
+const ContactMe = () => {
+    return (
+        <section className="contact-page">
+    <Title title="Contact Yanny" />
+    <div className="contact-section section-center contact-section-center">
+      <article className="contact-form">
+        <h3>get in touch</h3>
+        <form name="contact" action="/success" data-netlify="true" data-netlify-honeypot="bot-field" method="POST">
+        <input type="hidden" name="form-name" value="contact" />
+          <div className="form-group">
+            <input type="text" name="name" placeholder="name"
+            className="form-control" required />
+            <input type="email" name="email" placeholder="email"
+            className="form-control" required />
+            <input type="text" name="phone" placeholder="phone number(optional)"
+            className="form-control" />
+            <textarea name="message" placeholder="message" rows="5" className="form-control" required></textarea>
+          </div>
+          <button type="submit" className="submit-btn btn">submit</button>
+        </form>
+      </article>
+      <article className="contact-details">
+        <h3>Contact Details</h3>
+        <div className="form-group">
+        <p><strong>Want to call or email me instead?</strong></p>
+        <span><strong>Phone</strong></span>
+        <p>07947187536</p>
+        <span><strong>Email</strong></span>
+        <p><a href="mailto:yanny@yannyweb.com?subject=Project%20Enquiry">yanny@yannyweb.com</a></p>
+        <span><strong>Where I Work</strong></span>
+        <p>I frequently work in Milton Keynes and the surrounding area, including London.</p>
+        <SocialLinks styleClass="contact-social-links"/>
+        </div>
+      </article>
+      </div>
+    </section>
+    )
+}
+
+export default ContactMe

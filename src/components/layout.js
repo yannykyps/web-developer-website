@@ -11,7 +11,6 @@ import Sidebar from "./Sidebar"
 
 
 const Layout = ({ children }) => {
-  console.log(children);
   const [isOpen, setIsOpen] = React.useState(false);
   const toggleSidebar = () => {
     setIsOpen(!isOpen)
