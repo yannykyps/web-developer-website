@@ -2,7 +2,6 @@ const technologies = [
       "HTML",
       "CSS",
       "JavaScript",
-      "Styled-Components",
       "SQL",
       "NoSQL"
     ]
@@ -10,8 +9,9 @@ const technologies = [
   const webDev = [
     "Gatsby",
     "React",
-    "Node.js",
-    "GIT"
+    "Node",
+    "Next",
+    "GIT",
   ]
 
   const webDes = [
@@ -20,5 +20,12 @@ const technologies = [
     "Axure RP9"
   ]
 
+  const hosting = [
+    "Netlify",
+    "Firebase",
+    "AWS Amplify",
+    "Heroku"
+  ]
 
-  export {technologies, webDev, webDes}
+
+  export {technologies, webDev, webDes, hosting}

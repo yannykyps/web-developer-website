@@ -85,7 +85,7 @@ h4 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 
 h2 {
@@ -115,7 +115,7 @@ a:hover {
 
 @media screen and (min-width: 800px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3.25rem;
   }
 
   h2 {
@@ -149,7 +149,8 @@ a:hover {
 /*  global classes */
 
 .logo {
-  width: 100px;
+  width: 180px;
+  /* height: 37.16px; */
 }
 
 .btn {
@@ -233,12 +234,20 @@ a:hover {
   color: var(--clr-light-shade);
 }
 
+.section-title-light h1 {
+  color: var(--clr-dark-shade);
+}
+
 .bg-grey {
   background: var(--clr-light-shade);
 }
 
 .bg-dark {
   background: var(--clr-dark-shade);
+}
+
+.bg-light {
+  background: var(--clr-alternative);
 }
 
 .bg-black {
@@ -260,8 +269,6 @@ Navbar
   display: flex;
   align-items: center;
   z-index: 200;
-  /* testing */
-  /* background: var(--clr-light-shade); */
 }
 
 .nav-center {
@@ -278,6 +285,7 @@ Navbar
 
 .nav-header img {
   margin-bottom: 0.375rem;
+  margin-top: 0.375rem;
 }
 
 .toggle-btn {
@@ -298,7 +306,7 @@ Navbar
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 885px) {
   .toggle-btn {
     display: none;
   }
@@ -552,10 +560,6 @@ Hero
   margin-left: 0;
 }
 
-.hero-info {
-  /* background: var(--clr-light-shade); */
-}
-
 .hero-img {
   display: none;
 }
@@ -716,7 +720,6 @@ Skills
   -webkit-transition: var(--transition);
   transition: var(--transition);
   box-shadow: var(--light-shadow);
-
 }
 
 .skills-stack {
@@ -760,6 +763,9 @@ Skills
   transition: var(--transition);
 }
 
+.skills-item-stack {
+  display: inline-block;
+}
 .skills-item-stack span {
   display: inline-block;
   background: var(--clr-dark-shade);
@@ -853,7 +859,6 @@ Skills
     column-gap: 1.5rem;
     margin-bottom: 0;
   }
-
 }
 
 @media screen and (min-width: 992px) {
@@ -925,6 +930,7 @@ Footer
 
 .footer h4 span {
   color: var(--clr-light-shade);
+  text-transform: none;
 }
 
 .footer-links {
@@ -948,6 +954,17 @@ Projects
 .project {
   display: grid;
   margin-bottom: 4rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.project-links {
+  /* margin-top: 10px; */
+  margin-bottom: -15px;
 }
 
 .project-img {
@@ -1020,8 +1037,7 @@ Projects
 
 .project-icon {
   color: var(--clr-primary-5);
-  font-size: 1.25rem;
-  margin-right: 0.5rem;
+  font-size: 1.7rem;
   transition: var(--transition);
 }
 
@@ -1031,13 +1047,13 @@ Projects
 
 @media screen and (min-width: 576px) {
   .project-img {
-    height: 19rem;
+    height: 24rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .project-img {
-    height: 22rem;
+    height: 28rem;
   }
 }
 
@@ -1173,6 +1189,45 @@ Contact
 
 /*
 ===============
+Infographic
+===============
+*/
+
+.infographic {
+  max-width: 900px;
+  width: 100%;
+  margin: auto auto 3rem auto;
+}
+
+.how {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+.how-section {
+  margin-top: 3rem;
+}
+.how-section .underline {
+  width: 3rem;
+  height: 0.12rem;
+}
+
+.how-ul {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  list-style-type: disc;
+}
+
+.how-benefit {
+  width: fit-content;
+  margin: auto;
+  text-align: left;
+  list-style-type: disc;
+}
+/*
+===============
 Pages
 ===============
 */
@@ -1209,12 +1264,14 @@ About Page
 ===============
 */
 .about-page {
-  padding: 7rem 0;
+  padding: 3rem 0 7rem 0;
 }
 
 .about-img {
-  margin-bottom: 2rem;
-  height: 25rem;
+  /* margin-bottom: 2rem; */
+  /* height: 25rem; */
+  max-width: 400px;
+  margin: auto auto 2rem auto;
 }
 
 .about-text .section-title {
@@ -1262,11 +1319,15 @@ About Page
 
   .about-img {
     grid-column: 1 / span 5;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .about-text {
     grid-column: 6 / -1;
+  }
+
+  .about-page {
+    padding: 5rem 0;
   }
 }
 

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1",
+    "title": "Mama Sue's Cook House (in development)",
+    "description": "A new take-away restaurant opening soon. Customer wants a beautiful website to showcase their delicious food. The design will be vibrant to go with the theme of the restuarant. Currently in development.",
+    "date": "2020-09-04",
+    "url": "https://github.com/yannykyps/mama-sues",
+    "image": "../assets/mama-sues.jpg",
+    "stack": ["gatsby", "react", "node"]
+  },
+  {
+    "id": "2",
+    "title": "BraceAir",
+    "description": "Refrigeration engineers portfolio website. A clean design that showcases the company's services. What makes this website stand out from its competitors is the speed performance, with desktop speeds near perfect and mobile in the high 80s, early 90s. Great for SEO rankings.",
+    "url": "https://braceair.co.uk/",
+    "image": "../assets/braceair.jpg",
+    "stack": ["gatsby", "react", "node"]
+  },
+  {
+    "id": "3",
+    "title": "Lipstick Lifters",
+    "description": "Modernised the website as the previous site became clunky and slow in Wordpress. Moved website to Gatsby and created a better user experience (UX) and made it blazing-fast. Updated the authentication for members and the Stripe payment workflow. Used AWS Amplify as my serverless service to create a truely modern serverless web app.",
+    "date": "2021-01-21",
+    "url": "https://lipsticklifters.com",
+    "image": "../assets/lipstick-lifters.jpg",
+    "stack": ["gatsby", "react", "node", "AWS"]
+  }
+]

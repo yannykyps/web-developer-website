@@ -5,7 +5,7 @@ const Services = () => {
   return <section className="section bg-dark">
     <Title 
     title="services"
-    subTitle="Website designer and React web developer based in Milton Keynes. Creating beautiful, blazing-fast and very responsive websites using the React, Node and Gatsby frameworks." 
+    subTitle="Website designer and web developer based in Milton Keynes. Creating beautiful, blazing-fast and very responsive websites and web apps using React, Node and JAMstack architecture." 
     styleClass="section-title-light"/>
     <div className="section-center services-center">
       {services.map((service)=>{

@@ -10,7 +10,7 @@ export default [
     id: 1,
     icon: <GoRocket className="skills-icon" />,
     title: "Blazing-Fast",
-    text: `I use React and Gatsby to create blazing-fast web content. Gatsby is an endlessly customisable framework for building websites and web apps that are scalable, reliable and secure.`,
+    text: `I create blazing-fast web content. I put a lot of emphasis on making sure web content is delivered fast to your customers. Every millisecond counts.`,
   },
   {
     id: 2,
@@ -22,12 +22,12 @@ export default [
     id: 3,
     icon: <VscEditorLayout className="skills-icon" />,
     title: "Responsive",
-    text: `Websites will look great and will respond to the user’s behavior and environment based on screen size, platform and orientation.`,
+    text: `Websites will look great and will respond to the user’s behavior and environment based on screen size, platform and orientation. Built as a Progressive Web App (PWA).`,
   },
   {
     id: 4,
     icon: <AiFillEdit className="skills-icon" />,
     title: "editable content",
-    text: `You will be able to edit your own content through a CMS of your choice, whether that is WordPress, Drupal, Contentful, Shopify, plus many more.`,
+    text: `You will be able to edit your own content through a content management system (CMS) of your choice, whether that is WordPress, Drupal, Contentful, Shopify, plus many more.`,
   },
 ]

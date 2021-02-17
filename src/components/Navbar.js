@@ -1,5 +1,6 @@
 import React from 'react'
-import logo from "../assets/logoyanny.svg"
+import { Link } from "gatsby"
+import logo from "../assets/yannylogo.svg"
 import { FaAlignRight } from "react-icons/fa"
 import Links from "../constants/links"
 
@@ -8,7 +9,7 @@ const Navbar = ({toggleSidebar}) => {
         <nav className="navbar">
             <div className="nav-center">
             <div className="nav-header">
-                <img className="logo" src={logo} alt="logo" />
+                <Link to="/"><img className="logo" src={logo} width="180" height="47.78" alt="logo" /></Link>
                 <button className="toggle-btn" onClick={toggleSidebar}>
                 <FaAlignRight />
                 </button>

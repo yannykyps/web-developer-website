@@ -5,7 +5,7 @@ import SocialLinks from '../constants/socialLinks'
 const ContactMe = () => {
     return (
         <section className="contact-page">
-    <Title title="Contact Yanny" />
+    <Title titleH1="Contact" />
     <div className="contact-section section-center contact-section-center">
       <article className="contact-form">
         <h3>get in touch</h3>
@@ -32,7 +32,7 @@ const ContactMe = () => {
         <span><strong>Email</strong></span>
         <p><a href="mailto:yanny@yannyweb.com?subject=Project%20Enquiry">yanny@yannyweb.com</a></p>
         <span><strong>Where I Work</strong></span>
-        <p>I frequently work in Milton Keynes and the surrounding area, including London.</p>
+        <p>Milton Keynes and the surrounding area, including London.</p>
         <SocialLinks styleClass="contact-social-links"/>
         </div>
       </article>
@@ -42,3 +42,4 @@ const ContactMe = () => {
 }
 
 export default ContactMe
+

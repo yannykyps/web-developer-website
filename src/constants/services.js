@@ -5,7 +5,7 @@ export default [
     id: 1,
     icon: <FaCode className="service-icon" />,
     title: "web development",
-    text: `Coding and development of websites and web apps using a combination of React, Node and Gatsby.`,
+    text: `Coding and development of websites and web apps using a combination of JavaScript, React and Node.`,
   },
   {
     id: 2,
@@ -17,6 +17,6 @@ export default [
     id: 3,
     icon: <FaAndroid className="service-icon" />,
     title: "web apps",
-    text: `Do you want a web app instead? I can design and develop beautifully functioning apps using React.`,
+    text: `All of my websites are built to function as web apps, PWAs. I can also publish the app on Google Play and Apple App Store.`,
   },
 ]

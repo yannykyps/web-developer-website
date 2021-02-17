@@ -7,8 +7,8 @@ import Pdf from "../assets/gatsby-one-pager.pdf"
 
 const WhyGatsby = () => {
 
-    return (<section className="section bg-dark">
-    <section className="section-center">
+    return (<div className="section bg-dark">
+    <div className="section-center">
   
     <article className="gatsby-stack">
     <GrGatsbyjs className="gatsby-logo-icon" />
@@ -28,8 +28,8 @@ const WhyGatsby = () => {
     </ul> 
     <a className="btn center-btn" href={Pdf} rel="noreferrer" target= "_blank">Need More Convincing?</a>   
     </article>
-    </section>
-    </section>
+    </div>
+    </div>
     )
 }
 

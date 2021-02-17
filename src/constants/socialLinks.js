@@ -12,7 +12,7 @@ const data = [
   {
     id: 1,
     icon: <FaFacebookSquare className="social-icon" />,
-    url: "https://www.facebook.com/ioannis.kyprianou.1/",
+    url: "https://www.facebook.com/yannyweb",
     aria: "TFacebook"
   },
   {
@@ -24,7 +24,7 @@ const data = [
   {
     id: 3,
     icon: <FaTwitterSquare className="social-icon"/>,
-    url: "https://twitter.com/yannykyps",
+    url: "https://twitter.com/yannyweb1",
     aria: "Twitter"
   },
   {
@@ -38,7 +38,7 @@ const data = [
 const links = data.map(link => {
   return (
     <li key={link.id}>
-      <OutboundLink href={link.url} className="social-link" aria-label={link.aria} target="_new">
+      <OutboundLink href={link.url} className="social-link" aria-label={link.aria} target="_blank" rel="noopener noreferrer">
       {link.icon}
       </OutboundLink>
     </li>

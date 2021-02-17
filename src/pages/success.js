@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 
 const Success = () => (
   <Layout>
-    <SEO title="Success" description="Form submitted to Yanny"/>
+    <SEO title="Success" description="Form submitted to Yanny" NoIndex/>
     <main className="error-page">
   <div className="error-container">
     <h2>Form Submitted, Thanks!</h2>

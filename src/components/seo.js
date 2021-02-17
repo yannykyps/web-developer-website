@@ -17,7 +17,7 @@ const query = graphql`
     }
   }
 `
-const SEO = ({title, description}) => {
+const SEO = ({title, NoIndex, description}) => {
   const { pathname } = useLocation();
   const {site} = useStaticQuery(query);
   const {siteDesc, siteTitle, siteUrl, author, image, twitterUsername} = site.siteMetadata
@@ -28,7 +28,7 @@ const SEO = ({title, description}) => {
     <meta property="og:url" content="https://www.yannyweb.com/" />
     <meta name="description" property="og:description" content={description || siteDesc} />
     <meta name="image" property="og:image" content={image} />
-    <link rel="canonical" href={`${siteUrl}${pathname}`} />
+    {!NoIndex && <link rel="canonical" href={`${siteUrl}${pathname}`} />}
     <meta name="author" content={author} />
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:creator" content={twitterUsername}/>

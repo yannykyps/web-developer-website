@@ -10,7 +10,7 @@ import Projects from "../components/Projects"
 import Contact from "../components/Contact"
 
 export default ({data}) => {
-  const {allStrapiProjects:{nodes:projects}} = data
+  const {allProjectsJson:{nodes:projects}} = data
   return (
   <Layout>
     <SEO title="Yanny" description="Freelance Web Developer services based in Milton Keynes, UK. Specialising in creating blazing fast web content using React and Gatsby."/>
@@ -26,19 +26,22 @@ export default ({data}) => {
 
   export const query = graphql`
   {
-    allStrapiProjects {
+    allProjectsJson(sort: {fields: id, order: DESC}) {
       nodes {
-        id
+        date
         description
+        id
         title
         url
+        stack
         image {
           childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
+            fluid(quality:64 maxWidth:870) {
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
       }
     }
-  }`
+  }
+`

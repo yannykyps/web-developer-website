@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Freelance Web Developer Services in Milton Keynes`,
+    title: `Freelance Web Developer in Milton Keynes`,
     description: `Freelance web developer services
     based in Milton Keynes, UK.`,
     author: "Yanny Kyprianou",
     twitterUsername: "@yannykyps",
-    image: "/twitter-img.png",
+    image: "/twitter-img.jpg",
     siteUrl: "https://www.yannyweb.com",
   },
   plugins: [
@@ -18,15 +18,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-crisp-chat',
-      options: {
-        websiteId: '480d3bc5-e7ae-41e8-bfc7-214467775d95',
-        enableDuringDevelop: true, // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
-        defer: true, // Optional. Sets the Crisp loading script to defer instead of async. Defaults to false.
-        enableImprovedAccessibility: false // Optional. Sets aria-label attribute on pop-up icon for screen readers. Defaults to true.
-      },
-    },
-    {
       resolve: `gatsby-plugin-csp`,
       options: {
         disableOnDev: true,
@@ -35,19 +26,19 @@ module.exports = {
         mergeStyleHashes: false, // you can disable styles sha256 hashes
         mergeDefaultDirectives: true,
         directives: {
-          "default-src": "'self' www.google-analytics.com https://*.crisp.chat 'unsafe-inline'",
-          "script-src": "'self' www.google-analytics.com https://*.crisp.chat",
-          "style-src": "'self' 'unsafe-inline' https://*.crisp.chat",
-          "img-src": "'self' data: www.google-analytics.com https://*.crisp.chat",
-          "connect-src": "'self' www.google-analytics.com https://www.google-analytics.com https://*.crisp.chat wss://*.crisp.chat",
-          "font-src": "'self' https://*.crisp.chat",
+          "default-src": "'self' www.google-analytics.com https://fonts.googleapis.com 'unsafe-inline'",
+          "script-src": "'self' www.google-analytics.com",
+          "style-src": "'self' https://fonts.googleapis.com 'unsafe-inline'",
+          "img-src": "'self' data: www.google-analytics.com",
+          "connect-src": "'self' www.google-analytics.com https://www.google-analytics.com ",
+          "font-src": "'self' https://fonts.gstatic.com",
         }
       }
     },
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        exclude: ["/success"],
+        exclude: ["/success", "/contact", "/about"],
       },
     },
     {
@@ -60,18 +51,19 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-json`,
     {
-      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        siteUrl: `https://www.yannyweb.com`,
-        exclude: ["/success"],
+        name: `assets`,
+        path: `${__dirname}/src/assets`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `assets`,
-        path: `${__dirname}/src/assets`,
+        path: `${__dirname}/src/data`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -85,37 +77,25 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/favicon-32x32.png`, // This path is relative to the root of the site.
+        icon: `src/images/yannyfavicon.png`, // This path is relative to the root of the site.
+        icon_options: {
+          // For all the options available, please see the additional resources below.
+          purpose: `maskable`,
+        },
       },
     },
     {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: `http://localhost:1337`,
-        queryLimit: 1000, // Default to 100
-        //   contentTypes : `jobs`, `projects`, `blogs`,
-        //   singleType : `about`
-        //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
-        contentTypes: [`projects`],
-        singleTypes: [],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts-with-attributes`,
       options: {
         fonts: [
-          {
-            family: `Roboto`,
-            variants: [`400`, `700`],
-          },
-          {
-            family: `Open Sans`,
-          },
-          {
-            family: `Ruda`,
-            variants: [`400`, `700`],
-          },
+            `Ruda\:400,700`,
+            `Open Sans`,
         ],
+        display: 'swap',
+        attributes: {
+          rel: "stylesheet preload prefetch",
+
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
