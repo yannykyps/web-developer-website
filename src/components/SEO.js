@@ -17,7 +17,7 @@ const query = graphql`
     }
   }
 `
-const SEO2 = ({title, NoIndex, description}) => {
+const SEO = ({title, NoIndex, description}) => {
   const { pathname } = useLocation();
   const {site} = useStaticQuery(query);
   const {siteDesc, siteTitle, siteUrl, author, image, twitterUsername} = site.siteMetadata
@@ -39,4 +39,4 @@ const SEO2 = ({title, NoIndex, description}) => {
   </Helmet>
 }
 
-export default SEO2
+export default SEO
