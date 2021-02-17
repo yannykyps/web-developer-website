@@ -10,7 +10,7 @@ import Navbar from "./Navbar"
 import Sidebar from "./Sidebar"
 
 
-const Layout = ({ children }) => {
+const Layout2 = ({ children }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const toggleSidebar = () => {
     setIsOpen(!isOpen)
@@ -27,4 +27,4 @@ const Layout = ({ children }) => {
 }
 
 
-export default Layout
+export default Layout2
