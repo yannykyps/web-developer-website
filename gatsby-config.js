@@ -28,9 +28,9 @@ module.exports = {
         mergeDefaultDirectives: true,
         directives: {
           "default-src": "'self' www.google-analytics.com https://fonts.googleapis.com 'unsafe-inline'",
-          "script-src": "'self' www.google-analytics.com",
+          "script-src": "'self' www.google-analytics.com maps.googleapis.com",
           "style-src": "'self' https://fonts.googleapis.com 'unsafe-inline'",
-          "img-src": "'self' data: www.google-analytics.com",
+          "img-src": "'self' data: www.google-analytics.com maps.gstatic.com *.googleapis.com *.ggpht",
           "connect-src": "'self' www.google-analytics.com https://www.google-analytics.com ",
           "font-src": "'self' https://fonts.gstatic.com",
         }
