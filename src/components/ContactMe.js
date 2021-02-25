@@ -80,15 +80,6 @@ const ContactMe = () => {
           </div>
         </article>
       </div>
-      <div className="section-center">
-        <iframe
-          className="map"
-          title="yannyWeb location map"
-          src="https://maps.google.com/maps?q=yannyweb&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-      </div>
     </section>
   )
 }

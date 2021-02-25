@@ -1150,12 +1150,6 @@ Contact
   color: var(--clr-light-shade);
 }
 
-.map {
-  width: 100%;
-  height: 300px;
-  border-radius: var(--radius);
-}
-
 @media screen and (min-width: 676px) {
   .contact-center {
     display: grid;
