@@ -5,14 +5,7 @@ Variables
 */
 
 :root {
-  /* old colour palette */
   --clr-white: #fff;
-  --clr-primary-2: hsl(185, 84%, 25%);
-  --clr-primary-5: #2caeba;
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-10: hsl(210, 36%, 96%);
-
   --transition: all 0.3s linear;
   --spacing: 0.2rem;
   --radius: 0.25rem;
@@ -26,20 +19,14 @@ Variables
   --clr-ui-primary: #d5525f;
   --clr-ui-info: #313d42;
   --clr-ui-success: #759355;
-  --clr-ui-warning: #f2831d;
   --clr-ui-danger: #f44336;
   /* colour scheme */
   --clr-light-shade: #fbfafa;
   --clr-alternative: #e7ebed;
-  /* Use this color as the background for your dark-on-light designs, or the text color of an inverted design. */
   --clr-light-accent: #82909f;
-  /* Accent colors can be used to bring attention to design elements by contrasting with the rest of the palette. */
   --clr-dark-accent: #d5525f;
-  /* This color should be eye-catching but not harsh. It can be liberally applied to your layout as its main identity. */
   --clr-brand: #ae7b3d;
-  /* Another accent color to consider. Not all colors have to be used - sometimes a simple color scheme works best. */
   --clr-dark-shade: #313d42;
-  /* Use as the text color for dark-on-light designs, or as the background for inverted designs. */
 }
 
 /*
@@ -150,7 +137,6 @@ a:hover {
 
 .logo {
   width: 180px;
-  /* height: 37.16px; */
 }
 
 .btn {
@@ -353,7 +339,6 @@ Sidebar
 ===============
 */
 .sidebar {
-  /* background: var(--clr-light-shade); */
   background: var(--clr-alternative);
   position: fixed;
   top: 0;
@@ -544,7 +529,6 @@ Hero
   margin-top: -5rem;
   padding-top: 5rem;
   height: 100vh;
-  /* background: var(--clr-light-shade); */
   background: var(--clr-alternative);
   position: relative;
 }
@@ -714,7 +698,6 @@ Skills
 .skills {
   background: var(--clr-alternative);
   padding: 3rem 1.5rem 1rem;
-  /* margin-bottom: 2rem; */
   border-radius: var(--radius);
   text-align: center;
   -webkit-transition: var(--transition);
@@ -725,7 +708,6 @@ Skills
 .skills-stack {
   background: var(--clr-light-shade);
   padding: 2rem 1.5rem 1rem 1rem;
-  /* margin-bottom: 2rem; */
   border-radius: var(--radius);
   text-align: center;
   -webkit-transition: var(--transition);
@@ -869,47 +851,6 @@ Skills
 
 /*
 ===============
-Why Gatsby
-===============
-*/
-
-.gatsby-logo-icon {
-  font-size: 5rem;
-  margin-bottom: 1.5rem;
-  color: #663399;
-}
-
-.gatsby-icon {
-  font-size: 1.5rem;
-  color: var(--clr-dark-shade);
-}
-
-.gatsby-ul {
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.gatsby-stack {
-  background: var(--clr-light-shade);
-  /* background: #e7ebed; */
-  padding: 3rem 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: var(--radius);
-  text-align: center;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-  border: 1px solid var(--clr-dark-shade);
-  box-shadow: var(--light-shadow);
-  margin: auto;
-  width: 95%;
-}
-
-.gatsby-stack:hover {
-  box-shadow: var(--dark-shadow);
-}
-
-/*
-===============
 Footer
 ===============
 */
@@ -963,7 +904,6 @@ Projects
 }
 
 .project-links {
-  /* margin-top: 10px; */
   margin-bottom: -15px;
 }
 
@@ -997,21 +937,10 @@ Projects
   border-bottom-right-radius: var(--radius);
 }
 
-.project-number {
-  display: inline-block;
-  font-size: 1.25rem;
-  color: var(--clr-primary-5);
-  margin-bottom: 0.75rem;
-}
-
 .project-info h3 {
   font-weight: 500;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
-}
-
-.project-desc {
-  color: var(--clr-grey-3);
 }
 
 .project-stack {
@@ -1036,13 +965,13 @@ Projects
 }
 
 .project-icon {
-  color: var(--clr-primary-5);
+  color: var(--clr-dark-shade);
   font-size: 1.7rem;
   transition: var(--transition);
 }
 
 .project-icon:hover {
-  color: var(--clr-primary-1);
+  color: var(--clr-light-accent);
 }
 
 @media screen and (min-width: 576px) {
@@ -1065,7 +994,6 @@ Projects
 
   .project-img {
     grid-column: 1 / span 8;
-    /* grid-column-end: 8; */
     grid-row: 1 / 1;
     height: 30rem;
     border-radius: var(--radius);
@@ -1100,7 +1028,6 @@ Contact
 */
 
 .contact {
-  /* background: var(--clr-light-shade); */
   background: var(--clr-alternative);
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -1170,13 +1097,11 @@ Contact
   list-style-type: decimal;
   list-style-position: inside;
   margin-bottom: 1rem;
-  /* text-indent: 20px; */
 }
 
 .my-services-center ul li {
   list-style-position: outside;
   margin-left: 1rem;
-  /* text-indent: 40px; */
 }
 
 .my-services-center h3 {
@@ -1268,8 +1193,6 @@ About Page
 }
 
 .about-img {
-  /* margin-bottom: 2rem; */
-  /* height: 25rem; */
   max-width: 400px;
   margin: auto auto 2rem auto;
 }
@@ -1301,12 +1224,6 @@ About Page
   align-items: center;
   letter-spacing: 1px;
   color: var(--clr-dark-shade);
-}
-
-.stack-icon {
-  color: var(--clr-primary-5);
-  margin-right: 0.25rem;
-  font-size: 1rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -1387,7 +1304,6 @@ Contact Page
   margin-bottom: 1.25rem;
   background: var(--clr-white);
   border-radius: var(--radius);
-  /* letter-spacing: var(--spacing); */
 }
 
 .form-control::placeholder {
