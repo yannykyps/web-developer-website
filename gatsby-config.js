@@ -15,6 +15,7 @@ module.exports = {
         trackingId: "UA-177642206-1",
         head: true,
         anonymize: true,
+        defer: false,
       },
     },
     {
@@ -38,7 +39,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        exclude: ["/success", "/contact", "/about"],
+        exclude: ["/success"],
       },
     },
     {
@@ -68,6 +69,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -94,7 +96,7 @@ module.exports = {
         display: 'swap',
         attributes: {
           rel: "stylesheet preload prefetch",
-
+          as: "style"
         },
       },
     },
