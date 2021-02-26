@@ -8,7 +8,7 @@ import Footer from "../components/Footer"
 const ProjectsPage = ({data:{allProjectsJson:{nodes:projects}}}) => {
     
      return (<Layout>
-     <SEO title="Projects Portfolio" description="Portfolio of my website designs and development" />
+     <SEO title="Projects Portfolio web designs" description="Portfolio of my website designs and development" />
     <section className="projects-page">
       <Projects projects={projects} titleH1="portfolio" />
     </section>
