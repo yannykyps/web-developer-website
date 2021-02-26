@@ -22,7 +22,7 @@ module.exports = {
       resolve: `gatsby-plugin-csp`,
       options: {
         disableOnDev: true,
-        reportOnly: false, // Changes header to Content-Security-Policy-Report-Only for csp testing purposes
+        reportOnly: false,
         mergeScriptHashes: true, // you can disable scripts sha256 hashes
         mergeStyleHashes: false, // you can disable styles sha256 hashes
         mergeDefaultDirectives: true,
@@ -81,7 +81,6 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/yannyfavicon.png`, // This path is relative to the root of the site.
         icon_options: {
-          // For all the options available, please see the additional resources below.
           purpose: `maskable`,
         },
       },
@@ -100,8 +99,6 @@ module.exports = {
         },
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
   ],
 }

@@ -11,7 +11,7 @@ export default [
     id: 2,
     icon: <FaSketch className="service-icon" />,
     title: "web design",
-    text: `Bespoke design of websites and web apps based on branding guidelines and customer requirements or I can create a design from scratch.`,
+    text: `Bespoke website design based on branding guidelines and customer requirements or I can create a design from scratch.`,
   },
   {
     id: 3,

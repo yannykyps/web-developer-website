@@ -17,7 +17,7 @@ const MissionStatement = () => {
     <h4>Mission Statement</h4> 
     <div className="underline"></div>
     <p>I build websites and apps based on a full stack JavaScript. Depending on your requirements, I will tailor the best solution that will suit both you and the project.</p>  
-    <p>I concentrate on building websites that offer the best user experience (UX) by making the website blazing-fast and making it responsive to all screen sizes.</p> 
+    <p>I concentrate on building websites that offer the best user experience (UX) by making the website design is blazing-fast and making it responsive to all screen sizes.</p>
     <p>I will use Search Engine Optimisation (SEO) to rank your site on google, using the best techniques and keywords to get your site more hits.</p>
     <p>Do you need a logo? I can create a fantastic design using Adobe Illustrator.</p>
     <p>I charge flat rates for all of my projects, not by the hour. <strong><Link to="/contact/">Contact Me</Link> for a quote. Alternatively, call me on 07947187536 or email me on <a href="mailto:yanny@yannyweb.com?subject=Project%20Enquiry" >yanny@yannyweb.com</a></strong></p>

@@ -22,7 +22,7 @@ const query = graphql`
 const About = ({data}) => {
     const {file: {childImageSharp: {fluid}}} = useStaticQuery(query)
     return (<Layout>
-        <SEO title="About Yanny" description="About me and my web development experience" />
+        <SEO title="About" description="About me and my web development experience" />
         <section className="about-page">
             <div className="section-center about-center">
             <Image fluid={fluid} className="about-img" />
