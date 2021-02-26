@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Freelance Web Developer in Milton Keynes`,
+    title: `yannyWeb`,
+    // title: `Freelance Web Developer in Milton Keynes`,
     description: `Freelance web developer services
     based in Milton Keynes, UK.`,
     author: "Yanny Kyprianou",

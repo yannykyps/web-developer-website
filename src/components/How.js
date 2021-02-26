@@ -42,7 +42,7 @@ const {file:{childImageSharp:{fluid}}} = useStaticQuery(query)
     JAMstack is built in a way where all the sites code, content and services are separate or decoupled. By using this approach you can leverage the expertise of the 3rd party services to add additional functionality to the site. Another benefit is that this makes your website more difficult to hack as all information is not in one place.    
     </p>
     <p>The infographic below illustrates what can be decoupled from the actual website but can also be easily implemented, if required.</p>
-    <Image className="infographic" fluid={fluid} />
+    <Image className="infographic" alt="jamstack infographic" fluid={fluid} />
     <h4>Benefits</h4>
     <div className="underline"></div>
     <ul className="how-ul">

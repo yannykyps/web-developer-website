@@ -5,7 +5,7 @@ import { FaShareSquare } from "react-icons/fa"
 const Project = ({title, description, image, url, stack}) => {
     return (
         <article className="project">
-        <Image fluid={image.childImageSharp.fluid} className="project-img" />
+        <Image fluid={image.childImageSharp.fluid} alt={title} className="project-img" />
         <div className="project-info">
             <h3>{title}</h3>
             <p>{description}</p>
