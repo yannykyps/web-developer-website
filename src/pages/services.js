@@ -7,7 +7,7 @@ import MyServices from "../components/MyServices"
 const ServicesPage = () => {
     return (
         <Layout>
-        <SEO title="My Services as a web design and developer" description="My services for web development" />
+        <SEO title="My Services as a web design and developer" description="What I can offer you as a web design and developer" />
         <section className="services-page">
         <MyServices />
         </section>
