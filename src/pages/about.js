@@ -9,7 +9,7 @@ import {technologies, webDev, webDes} from "../constants/skillsbar"
 
 const query = graphql`
 {
-  file(relativePath: {eq: "hero-img.png"}) {
+  file(relativePath: {eq: "hero-img-min.png"}) {
     childImageSharp {
       fluid(quality:64 maxWidth:400) {
         ...GatsbyImageSharpFluid_withWebp

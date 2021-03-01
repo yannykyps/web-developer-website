@@ -8,7 +8,7 @@ import Typewriter from 'typewriter-effect';
 
 const query = graphql`
 {
-  file(relativePath: {eq: "heronew-img.png"}) {
+  file(relativePath: {eq: "hero.png"}) {
     childImageSharp {
       fluid(quality:64 maxWidth:700) {
         ...GatsbyImageSharpFluid_withWebp
