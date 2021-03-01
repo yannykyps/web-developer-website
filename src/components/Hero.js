@@ -45,7 +45,7 @@ const Hero = () => {
           <SocialLinks />
         </div>
       </article>
-      <Image fluid={fluid} alt="hero" className="hero-img"/>
+      <Image fluid={fluid} durationFadeIn={150} loading="eager" alt="hero" className="hero-img"/>
     </div>
   </header>
 }
