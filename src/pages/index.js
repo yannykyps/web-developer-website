@@ -13,7 +13,7 @@ export default ({data}) => {
   const {allProjectsJson:{nodes:projects}} = data
   return (
   <Layout>
-    <SEO title="Web Design and Developer, Milton Keynes" description="Specialising in creating blazing fast websites and web designs using React, JAMstack and Gatsby."/>
+    <SEO title="Web Design and Developer, Milton Keynes" description="Specialising in creating blazing fast websites and web designs using React, JAMstack and Gatsby. Using modern technology to futureproof your website."/>
     <Hero />
     <Services />
     <Skills />
