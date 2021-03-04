@@ -72,11 +72,11 @@ h4 {
 }
 
 h1 {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 h3 {
@@ -102,15 +102,15 @@ a:hover {
 
 @media screen and (min-width: 800px) {
   h1 {
-    font-size: 3.25rem;
+    font-size: 2.75rem;
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   h3 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   h4 {
@@ -292,7 +292,7 @@ Navbar
   display: none;
 }
 
-@media screen and (min-width: 885px) {
+@media screen and (min-width: 960px) {
   .toggle-btn {
     display: none;
   }

@@ -17,13 +17,14 @@ const query = graphql`
     }
   }
 `
-const SEO = ({title, NoIndex, description}) => {
+const SEO = ({title, NoIndex, description, ogImage}) => {
   const { pathname } = useLocation();
   const {site} = useStaticQuery(query);
   const {siteDesc, siteTitle, siteUrl, author, image, twitterUsername} = site.siteMetadata
   return <Helmet htlmAttributes={{lang:"en"}} title={`${title} | ${siteTitle}`}>
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
+    {ogImage && <meta property="og:image" content={`${siteUrl}${ogImage}`} />}
     <meta property="og:site_name" content="yannyweb" />
     <meta property="og:url" content="https://www.yannyweb.com/" />
     <meta name="description" property="og:description" content={description || siteDesc} />
