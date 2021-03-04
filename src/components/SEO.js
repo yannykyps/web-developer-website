@@ -26,7 +26,7 @@ const SEO = ({title, NoIndex, description, ogImage, content}) => {
     <meta property="og:title" content={title} />
     {ogImage && <meta property="og:image" content={`${siteUrl}${ogImage}`} />}
     <meta property="og:site_name" content="yannyweb" />
-    <meta property="og:url" content="https://www.yannyweb.com/" />
+    <meta property="og:url" content={`${siteUrl}${pathname}`} />
     <meta name="description" property="og:description" content={description || siteDesc} />
     <meta name="image" content={image} />
     {!NoIndex && <link rel="canonical" href={`${siteUrl}${pathname}`} />}
