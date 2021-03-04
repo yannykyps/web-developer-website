@@ -19,6 +19,7 @@ const PostTemplate = ({ data }) => {
         title={title}
         description={meta}
         ogImage={ogImage.childImageSharp.fixed.src}
+        content="article"
       />
       <Wrapper>
         {/* post info */}
