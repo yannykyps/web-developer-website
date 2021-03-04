@@ -9,7 +9,7 @@ import Layout from "../components/Layout"
 const PostTemplate = ({ data }) => {
   const {
     mdx: {
-      frontmatter: { title, category, image, date, meta, ogImage },
+      frontmatter: { title, category, image, date, meta, ogImage, ogMeta },
       body,
     },
   } = data
@@ -20,6 +20,7 @@ const PostTemplate = ({ data }) => {
         description={meta}
         ogImage={ogImage.childImageSharp.fixed.src}
         content="article"
+        ogMeta={ogMeta}
       />
       <Wrapper>
         {/* post info */}
@@ -49,6 +50,7 @@ export const query = graphql`
         readTime
         slug
         meta
+        ogMeta
         image {
           childImageSharp {
             fluid(quality: 64, maxWidth: 800) {
