@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
-import Footer from '../components/Footer'
 import ContactMe from '../components/ContactMe'
 
 const ContactPage = () => {
@@ -9,7 +8,6 @@ const ContactPage = () => {
     <Layout>
     <SEO title="Contact yannyWeb today" description="contact me for a quote" />
     <ContactMe />
-    <Footer />
     </Layout>
     )
 }

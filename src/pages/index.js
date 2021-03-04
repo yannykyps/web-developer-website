@@ -5,7 +5,6 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import Services from "../components/Services"
 import Skills from "../components/Skills"
-import Footer from "../components/Footer"
 import Projects from "../components/Projects"
 import Contact from "../components/Contact"
 
@@ -19,7 +18,6 @@ export default ({data}) => {
     <Skills />
     <Projects projects={projects} title="Featured Portfolio" styleClass="bg-dark" showLink/>
     <Contact />
-    <Footer />
   </Layout>
 )
   }

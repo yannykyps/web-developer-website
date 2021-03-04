@@ -4,7 +4,6 @@ import Image from "gatsby-image"
 import Title from "../components/Title"
 import Layout from '../components/Layout'
 import SEO from "../components/SEO"
-import Footer from '../components/Footer'
 import {technologies, webDev, webDes} from "../constants/skillsbar"
 
 const query = graphql`
@@ -46,7 +45,6 @@ const About = ({data}) => {
             </article>
             </div>
         </section>
-        <Footer />
         </Layout>
     )
 }

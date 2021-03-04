@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Projects from "../components/Projects"
 import SEO from "../components/SEO"
-import Footer from "../components/Footer"
 
 const ProjectsPage = ({data:{allProjectsJson:{nodes:projects}}}) => {
     
@@ -12,7 +11,6 @@ const ProjectsPage = ({data:{allProjectsJson:{nodes:projects}}}) => {
     <section className="projects-page">
       <Projects projects={projects} titleH1="portfolio" />
     </section>
-    <Footer />
     </Layout>
      )
   }

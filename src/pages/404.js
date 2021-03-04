@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
-import Footer from "../components/Footer"
 
 const NotFoundPage = () => (
   <Layout>
@@ -15,7 +14,6 @@ const NotFoundPage = () => (
     </Link>
   </div>
   </main>
-  <Footer />
   </Layout>
 )
 

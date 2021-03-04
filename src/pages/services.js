@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
-import Footer from "../components/Footer"
 import MyServices from "../components/MyServices"
 
 const ServicesPage = () => {
@@ -11,7 +10,6 @@ const ServicesPage = () => {
         <section className="services-page">
         <MyServices />
         </section>
-        <Footer />
         </Layout>
     )
 }
