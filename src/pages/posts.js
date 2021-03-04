@@ -7,7 +7,7 @@ import Posts from '../components/Posts'
 const PostsPage = ({ data }) => {
   const {allMdx:{nodes:posts}} = data;
   return <Layout>
-  <SEO title="Posts, Blogs" description="posts, blogs about web developement and web design" />
+  <SEO title="Posts, Blogs on web development" description="posts, blogs about web developement and web design" />
     <Posts posts={posts} title="all posts" />
   </Layout>
 }

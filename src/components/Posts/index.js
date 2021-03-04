@@ -1,10 +1,11 @@
 import React from "react"
 import Post from "./Post"
+import Title from "../Title"
 
 const Posts = ({ posts, title }) => {
   return (
     <section className="section section-center">
-      <h3 className="section-title">{title}</h3>
+      <Title titleH1={title} />
       <div >
         {/* posts column */}
         <article>
