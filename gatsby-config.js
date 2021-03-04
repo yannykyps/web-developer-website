@@ -54,6 +54,7 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-json`,
+    `gatsby-remark-images`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -64,14 +65,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `assets`,
+        name: `data`,
         path: `${__dirname}/src/data`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `assets`,
+        name: `posts`,
         path: `${__dirname}/src/posts`,
       },
     },
@@ -83,8 +84,9 @@ module.exports = {
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 800,
-              quality: 100,
-              withWebP: true,
+              quality: 64,
+              withWebp: true,
+              withAvif: true,
               linkImagesToOriginal: false,
             },
           },
@@ -95,10 +97,10 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-preact`,
-    `gatsby-remark-images`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

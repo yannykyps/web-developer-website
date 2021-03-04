@@ -79,6 +79,8 @@ Most browsers support [WebP](https://developers.google.com/speed/webp) but you c
 
 I’ve used [ezgif](https://ezgif.com/webp-maker) to convert images to WebP in the past, which is a great tool but most web development platforms will have a plugin that does this. I use Gatsby as my platform which has a great plugin called [gatsby-image](https://www.gatsbyjs.com/plugins/gatsby-image/). It serves a WebP image with a fallback of the orginial image format, plus a whole lot more image optimisations.
 
+[AVIF](https://www.freecodecamp.org/news/how-to-use-avif-images-on-your-website/) is another modern format that is 50% smaller than JPG and 20% smaller than WebP. I've only started using it as recent as this post through the awesome power of Gatsby plugins. Currently, only Chrome, the latest Firefox and Opera support this format so if you do use it, have a fallback format in place. I will keep a close eye on this one.
+
 #### art direction
 
 Serving a different optimised image based on device size will increase your mobile speed performance. If you are using a Hero image, consider having a mobile optimised image based on the dimensions of a mobile device. I generally go with 400px width.

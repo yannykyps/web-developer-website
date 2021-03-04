@@ -1,6 +1,6 @@
 import React from "react"
 import { FaCode, FaSketch, FaAndroid } from "react-icons/fa"
-export default [
+const services = [
   {
     id: 1,
     icon: <FaCode className="service-icon" />,
@@ -20,3 +20,5 @@ export default [
     text: `All of my websites are built to function as web apps, PWAs. I can also publish the app on Google Play and Apple App Store.`,
   },
 ]
+
+export default services

@@ -8,7 +8,7 @@ import Skills from "../components/Skills"
 import Projects from "../components/Projects"
 import Contact from "../components/Contact"
 
-export default ({data}) => {
+const IndexPage = ({data}) => {
   const {allProjectsJson:{nodes:projects}} = data
   return (
   <Layout>
@@ -43,3 +43,4 @@ export default ({data}) => {
     }
   }
 `
+export default IndexPage

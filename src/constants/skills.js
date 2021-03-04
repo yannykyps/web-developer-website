@@ -5,7 +5,7 @@ import { AiFillEdit} from "react-icons/ai"
 import { GoRocket} from "react-icons/go"
 
 
-export default [
+const skills = [
   {
     id: 1,
     icon: <GoRocket className="skills-icon" />,
@@ -31,3 +31,5 @@ export default [
     text: `You will be able to edit your own content through a content management system (CMS) of your choice, whether that is WordPress, Drupal, Contentful, Shopify, plus many more.`,
   },
 ]
+
+export default skills
