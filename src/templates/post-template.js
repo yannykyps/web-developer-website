@@ -15,7 +15,11 @@ const PostTemplate = ({ data }) => {
   } = data
   return (
     <Layout>
-      <SEO title={title} description={meta} ogImage={ogImage.childImageSharp.fixed.src}/>
+      <SEO
+        title={title}
+        description={meta}
+        ogImage={ogImage.childImageSharp.fixed.src}
+      />
       <Wrapper>
         {/* post info */}
         <article className="section">
