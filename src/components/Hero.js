@@ -36,6 +36,8 @@ const Hero = () => {
           src="../assets/hero.png"
           alt="hero"
           quality={64}
+          width={700}
+          height={700}
           placeholder="blurred"
           layout="constrained"
           loading="eager"
