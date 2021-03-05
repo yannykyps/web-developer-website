@@ -1,29 +1,11 @@
 import React from "react"
-import Image from "gatsby-image"
 import { Link } from "gatsby"
-import { graphql, useStaticQuery } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import SocialLinks from "../constants/socialLinks"
 import Typewriter from "typewriter-effect"
 
-const query = graphql`
-  {
-    file(relativePath: { eq: "hero.png" }) {
-      childImageSharp {
-        fluid(quality: 64, maxWidth: 700) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`
-
 const Hero = () => {
-  const {
-    file: {
-      childImageSharp: { fluid },
-    },
-  } = useStaticQuery(query)
-
+  const formats = ["auto", "webp", "avif"]
   return (
     <header className="hero">
       <div className="section-center hero-center">
@@ -36,7 +18,6 @@ const Hero = () => {
               <br />
               based in Milton Keynes
             </h3>
-
             <div className="typewriter-div">
               <Typewriter
                 onInit={typewriter => {
@@ -50,12 +31,15 @@ const Hero = () => {
             <SocialLinks />
           </div>
         </article>
-        <Image
-          fluid={fluid}
-          durationFadeIn={150}
-          loading="eager"
+        <StaticImage
+          src="../assets/hero.png"
           alt="hero"
+          quality={64}
           className="hero-img"
+          placeholder="blurred"
+          layout="constrained"
+          loading="eager"
+          formats={formats}
         />
       </div>
     </header>
