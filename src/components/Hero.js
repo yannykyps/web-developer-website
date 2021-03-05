@@ -31,16 +31,17 @@ const Hero = () => {
             <SocialLinks />
           </div>
         </article>
+        <div className="hero-img">
         <StaticImage
           src="../assets/hero.png"
           alt="hero"
           quality={64}
-          className="hero-img"
           placeholder="blurred"
           layout="constrained"
           loading="eager"
           formats={formats}
         />
+        </div>
       </div>
     </header>
   )
