@@ -26,9 +26,13 @@ export const query = graphql`
           readTime
           image {
             childImageSharp {
-              fluid(quality: 64, maxWidth: 992) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
+              gatsbyImageData(
+                width: 992
+                quality: 64
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
+                layout: CONSTRAINED
+              )
             }
           }
         }

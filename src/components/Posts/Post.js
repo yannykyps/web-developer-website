@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'gatsby-image'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { FaRegClock } from 'react-icons/fa'
 import { IoMdArrowRoundForward } from 'react-icons/io'
 import { Link } from 'gatsby'
@@ -7,8 +7,10 @@ import styled from 'styled-components'
 
 const Post = ({frontmatter, excerpt}) => {
   const {title, image, slug, date, category, readTime} = frontmatter;
+  const img = getImage(image)
+
   return <Wrapper>
-    <Image fluid={image.childImageSharp.fluid} className="img" />
+    <GatsbyImage image={img} alt={title} className="img" />
     <div className="info">
       <span className="category">{category}</span>
       <h3>{title}</h3>

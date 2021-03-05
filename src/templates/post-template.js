@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Image from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import SEO from "../components/SEO"
@@ -13,12 +13,14 @@ const PostTemplate = ({ data }) => {
       body,
     },
   } = data
+  const img = getImage(image)
+  const ogImg = getImage(ogImage)
   return (
     <Layout>
       <SEO
         title={title}
         description={meta}
-        ogImage={ogImage.childImageSharp.fixed.src}
+        ogImage={ogImg.images.fallback.src}
         content="article"
         ogMeta={ogMeta}
       />
@@ -26,7 +28,7 @@ const PostTemplate = ({ data }) => {
         {/* post info */}
         <article className="section">
           <div className="img">
-            <Image fluid={image.childImageSharp.fluid} />
+            <GatsbyImage image={img} alt={title} loading="eager" />
           </div>
           <div className="post-info">
             <span>{category}</span>
@@ -53,16 +55,18 @@ export const query = graphql`
         ogMeta
         image {
           childImageSharp {
-            fluid(quality: 64, maxWidth: 800) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(
+              width: 800
+              quality: 64
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+              layout: CONSTRAINED
+            )
           }
         }
         ogImage {
           childImageSharp {
-            fixed {
-              src
-            }
+            gatsbyImageData(layout: FIXED)
           }
         }
         category
