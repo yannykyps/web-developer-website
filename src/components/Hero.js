@@ -6,7 +6,6 @@ import Typewriter from "typewriter-effect"
 
 const Hero = () => {
   const formats = ["auto", "webp", "avif"]
-  const width = 700
   return (
     <header className="hero">
       <div className="section-center hero-center">
@@ -37,8 +36,8 @@ const Hero = () => {
           src="../assets/hero.png"
           alt="hero"
           quality={64}
-          width={width}
-          height={width}
+          width={700}
+          height={700}
           placeholder="blurred"
           layout="constrained"
           loading="eager"

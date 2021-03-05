@@ -1,23 +1,10 @@
 import React from 'react'
-import { graphql, useStaticQuery, Link } from 'gatsby'
-import Image from 'gatsby-image'
+import { Link } from 'gatsby'
+import { StaticImage } from "gatsby-plugin-image"
 import Title from './Title'
 
-const query = graphql`
-{
-    file(relativePath: {eq: "infographic-min.png"}) {
-      childImageSharp {
-        fluid(quality:100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
-
 const How = () => {
-const {file:{childImageSharp:{fluid}}} = useStaticQuery(query)
-
+const formats = ["auto", "webp", "avif"]
     return (
     <section className="section bg-light">
     <div className="section-center">
@@ -42,7 +29,18 @@ const {file:{childImageSharp:{fluid}}} = useStaticQuery(query)
     JAMstack is built in a way where all the sites code, content and services are separate or decoupled. By using this approach you can leverage the expertise of the 3rd party services to add additional functionality to the site. Another benefit is that this makes your website more difficult to hack as all information is not in one place.    
     </p>
     <p>The infographic below illustrates what can be decoupled from the actual website but can also be easily implemented, if required.</p>
-    <Image className="infographic" alt="jamstack infographic" fluid={fluid} />
+    <StaticImage
+          src="../assets/infographic-min.png"
+          alt="jamstack infographic"
+          quality={64}
+          width={900}
+          height={607}
+          placeholder="blurred"
+          className="infographic"
+          layout="constrained"
+          loading="lazy"
+          formats={formats}
+        />
     <h4>Benefits</h4>
     <div className="underline"></div>
     <ul className="how-ul">
