@@ -497,18 +497,6 @@ Hero
 ===============
 */
 
-.bcg {
-  /* MUST!!!!!! */
-  min-height: 100vh;
-  margin-top: -5rem;
-  display: grid;
-  place-items: center;
-}
-
-.bcg::before {
-  opacity: 1;
-}
-
 .Typewriter span {
   font-size: 0.875rem;
   letter-spacing: var(--spacing);
@@ -546,6 +534,10 @@ Hero
 
 .hero-img {
   display: none;
+}
+
+.hero-image {
+  max-width: 700;
 }
 
 .hero-info h4,
@@ -595,7 +587,7 @@ Hero
   }
 
   .hero-img {
-    display: block;
+    display: inline-block;
     grid-row: 1/1;
     grid-column: 6/-1;
   }
