@@ -172,6 +172,7 @@ a:hover {
 /* section */
 .section {
   padding: 5rem 0;
+  position: relative;
 }
 
 .sub-section {

@@ -41,7 +41,7 @@ const Hero = () => {
           height={width}
           placeholder="blurred"
           layout="constrained"
-          loading="lazy"
+          loading="eager"
           formats={formats}
         />
         </div>
