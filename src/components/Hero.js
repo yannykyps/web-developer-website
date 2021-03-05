@@ -40,9 +40,8 @@ const Hero = () => {
           width={width}
           height={width}
           placeholder="blurred"
-          imgClassName="hero-image"
           layout="constrained"
-          loading="eager"
+          loading="lazy"
           formats={formats}
         />
         </div>

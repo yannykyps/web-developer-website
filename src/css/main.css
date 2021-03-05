@@ -536,10 +536,6 @@ Hero
   display: none;
 }
 
-.hero-image {
-  max-width: 700;
-}
-
 .hero-info h4,
 .hero-info h3 {
   color: var(--clr-dark-shade);
