@@ -1,11 +1,12 @@
 import React from 'react'
-import Image from "gatsby-image"
 import { FaShareSquare } from "react-icons/fa"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Project = ({title, description, image, url, stack}) => {
+    const img = getImage(image)
     return (
         <article className="project">
-        <Image fluid={image.childImageSharp.fluid} alt={title} className="project-img" />
+        <GatsbyImage image={img} alt={title} className="project-img" />
         <div className="project-info">
             <h3>{title}</h3>
             <p>{description}</p>

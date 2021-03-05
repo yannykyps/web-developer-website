@@ -27,9 +27,13 @@ export const query = graphql`
       stack
       image {
         childImageSharp {
-          fluid(quality:64 maxWidth:870) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(
+            width: 870
+            quality: 64
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+            layout: CONSTRAINED
+          )
         }
       }
     }

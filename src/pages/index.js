@@ -8,23 +8,33 @@ import Skills from "../components/Skills"
 import Projects from "../components/Projects"
 import Contact from "../components/Contact"
 
-const IndexPage = ({data}) => {
-  const {allProjectsJson:{nodes:projects}} = data
+const IndexPage = ({ data }) => {
+  const {
+    allProjectsJson: { nodes: projects },
+  } = data
   return (
-  <Layout>
-    <SEO title="Web Design and Developer, Milton Keynes" description="Specialising in creating blazing fast websites and web designs using React, JAMstack and Gatsby. Using modern technology to futureproof your website."/>
-    <Hero />
-    <Services />
-    <Skills />
-    <Projects projects={projects} title="Featured Portfolio" styleClass="bg-dark" showLink/>
-    <Contact />
-  </Layout>
-)
-  }
+    <Layout>
+      <SEO
+        title="Web Design and Developer, Milton Keynes"
+        description="Specialising in creating blazing fast websites and web designs using React, JAMstack and Gatsby. Using modern technology to futureproof your website."
+      />
+      <Hero />
+      <Services />
+      <Skills />
+      <Projects
+        projects={projects}
+        title="Featured Portfolio"
+        styleClass="bg-dark"
+        showLink
+      />
+      <Contact />
+    </Layout>
+  )
+}
 
-  export const query = graphql`
+export const query = graphql`
   {
-    allProjectsJson(sort: {fields: id, order: DESC}) {
+    allProjectsJson(sort: { fields: id, order: DESC }) {
       nodes {
         date
         description
@@ -34,9 +44,13 @@ const IndexPage = ({data}) => {
         stack
         image {
           childImageSharp {
-            fluid(quality:64 maxWidth:870) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(
+              width: 870
+              quality: 64
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+              layout: CONSTRAINED
+            )
           }
         }
       }
