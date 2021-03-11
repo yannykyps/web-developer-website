@@ -4,7 +4,7 @@
     "title": "Mama Sue's Cook House (in development)",
     "description": "A new take-away restaurant opening soon. Customer wants a beautiful website to showcase their delicious food. The design will be vibrant to go with the theme of the restuarant. Currently in development.",
     "date": "2020-09-04",
-    "url": "https://github.com/yannykyps/mama-sues",
+    "url": "https://mamasues.netlify.app/",
     "image": "../assets/mama-sues.jpg",
     "stack": ["gatsby", "react", "node"]
   },
