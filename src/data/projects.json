@@ -24,5 +24,22 @@
     "url": "https://lipsticklifters.com",
     "image": "../assets/lipstick-lifters.jpg",
     "stack": ["gatsby", "react", "node", "AWS"]
+  },
+  {
+    "id": "4",
+    "title": "Kenquiry CRM",
+    "description": "Originally created in-house whilst I was working for the UK government. Kenquiry is a CRM used to manage the workflow for an in-house team of departments (IT, Accounts, HR, Protocol, Estates). Original stack was VBA and SQL but I wanted to create a demo using React and JavaScript libraries.",
+    "date": "2021-01-21",
+    "url": "https://kenquiry-crm-dynamo-db.vercel.app/",
+    "image": "../assets/kenquiry.JPG",
+    "stack": [
+      "next.js",
+      "react",
+      "node",
+      "AWS",
+      "DynamoDB",
+      "D3.js",
+      "TailwindCSS"
+    ]
   }
 ]

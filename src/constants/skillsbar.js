@@ -12,6 +12,7 @@ const technologies = [
     "Node",
     "Next",
     "GIT",
+    "D3.js"
   ]
 
   const webDes = [
@@ -22,8 +23,9 @@ const technologies = [
 
   const hosting = [
     "Netlify",
+    "Vercel",
     "Firebase",
-    "AWS Amplify",
+    "AWS",
     "Heroku"
   ]
 
